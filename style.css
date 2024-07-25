@@ -1,0 +1,90 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+#game-container {
+    text-align: center;
+    position: relative; /* Ensure the Play Again button is positioned relative to this container */
+}
+
+h1 {
+    color: blue;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(7, 50px);
+    grid-template-rows: repeat(6, 50px);
+    gap: 5px;
+    justify-content: center;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #000;
+}
+
+.cell.red {
+    background-color: red;
+}
+
+.cell.yellow {
+    background-color: yellow;
+}
+
+#controls {
+    margin-top: 20px;
+}
+
+button {
+    margin: 0 5px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff0000; /* Red color for the message */
+}
+
+#play-again {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#play-again:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
